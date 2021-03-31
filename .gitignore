@@ -141,3 +141,5 @@ dmypy.json
 profile_default/
 ipython_config.py
 
+# Ignore other models
+models/other_models/
