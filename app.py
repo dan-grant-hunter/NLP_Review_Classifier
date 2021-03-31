@@ -45,7 +45,7 @@ def prepare_review(review, stop_words):
 
 st.title("Hotel Review Classifier")
 
-review = st.text_area('Enter Review Here', height=250)
+review = st.text_area('Enter Review Here', height=200)
 
 if st.button('Predict Rating'):
     
