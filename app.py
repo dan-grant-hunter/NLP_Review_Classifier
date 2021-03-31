@@ -4,6 +4,9 @@ from model_trainer import TrainModel
 from nltk.stem import WordNetLemmatizer
 import streamlit as st
 
+# Load star image for reviews
+from PIL import Image
+image = Image.open('images/star.png')
 
 # ----------------------------------------------------------------------------
 # Loading model and function for preparing review
@@ -42,7 +45,7 @@ def prepare_review(review, stop_words):
 
 st.title("Hotel Review Classifier")
 
-review = st.text_area('Enter Your Review Here')
+review = st.text_area('Enter Review Here', height=250)
 
 if st.button('Predict Rating'):
     
@@ -50,7 +53,6 @@ if st.button('Predict Rating'):
     review = prepare_review(review, stop_words)
     
     # Make predicition
-    # with st.spinner('Loading the algorithm. This could take a few seconds...'):
     model = load_model()
     
     with st.spinner('Reading review...'):
@@ -63,3 +65,6 @@ if st.button('Predict Rating'):
         st.warning(pred)
     else:
         st.success(pred)
+
+    # Show star rating
+    st.image([image]*pred)
