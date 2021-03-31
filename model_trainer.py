@@ -1,11 +1,13 @@
-# Preprocessing and evaluation
 from sklearn.model_selection import GridSearchCV, StratifiedKFold
 from sklearn.metrics import accuracy_score, classification_report, precision_score, f1_score
 from sklearn.metrics import confusion_matrix
 
+
 # ==================================================================================================
 
+
 class TrainModel:
+
 
     '''
     The TrainModel object finds the best hyperparameters for a given model using
@@ -48,6 +50,7 @@ class TrainModel:
         Confusion matrix 
     '''
 
+
     def __init__(self, model, params, X_train, X_valid, y_train, y_valid):
         self.model = model
         self.X_train = X_train
@@ -56,6 +59,7 @@ class TrainModel:
         self.y_valid = y_valid
         self.params = params 
     
+
     def train(self):
         cv = StratifiedKFold(n_splits=3, random_state=42, shuffle=True)
         gs = GridSearchCV(estimator=self.model, param_grid=self.params, cv=cv, 
