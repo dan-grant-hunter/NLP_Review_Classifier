@@ -10,9 +10,11 @@ Today, reviews form a big part of society and many people rely heavily on them w
 
 While many people do leave reviews and ratings, many others share their thoughts and feelings about particular goods and services in a variety of different public places, such as forums, blogs or even through social media channels.
 
-Given the usefulness of this feedback, it could be beneficial for a business to develop a methodology to find these reviews and attempt to estimate what rating that person would have given for the good or service that they recieved. 
+Given the usefulness of this feedback, it could be beneficial for a business to develop a methodology to find these reviews and attempt to estimate what rating that person would have given for the good or service that they received. 
 
-Processing textual information like this could give businesses a more comprehenisve understanding of how their products and services are perceived by consumers which could help them make critical business decisions.
+Processing textual information like this could give businesses a more comprehensive understanding of how their products and services are perceived by consumers which could help them make critical business decisions.
+
+In this project, I focused on reviews of hotels by using data from the popular travel booking site TripAdvisor.
 
 ---
 
