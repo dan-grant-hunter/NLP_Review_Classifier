@@ -100,7 +100,7 @@ After finding a model that performed reasonably well and wasn't too big in size,
 
 High Rating | Low Rating
 :----------------:|:----------------:
-![alt text](images/nlp_review_classifier_app_high.png "Highly rated review")  |  ![alt text](images/nlp_review_classifier_app_low.png, "Low-rated review")
+![alt text](images/nlp_review_classifier_app_high.png "Highly rated review")  |  ![alt text](images/nlp_review_classifier_app_low.png "Low-rated review")
 
 ## Future Development
 
