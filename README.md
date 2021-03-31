@@ -68,11 +68,23 @@ To view all of the notebooks in nbviewer, click the following links:
 
 Below are a few highlights from the analysis. 
 
-![alt text](images/word_count_by_rating.png "Plot showing average word length and word count by rating")
 
-![alt text](images/review_length_by_word_count.png "Plot showing review length by word count") 
+#### Average word length and word count by rating
 
-![alt text](images/wordcloud.png "Wordcloud") 
+![alt text](images/word_count_by_rating.png "Plot showing average word length and word count by rating")  
+
+
+#### Length of reviews by word count
+
+![alt text](images/review_length_by_word_count.png "Plot showing review length by word count")  
+
+
+#### Wordcloud 
+
+![alt text](images/wordcloud.png "Wordcloud")  
+
+
+#### BERT confusion matrix with accuracy
 
 ![alt text](images/bert_confusion_matrix.png "Confusion matrix for BERT model") 
 
