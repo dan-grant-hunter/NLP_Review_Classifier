@@ -11,7 +11,7 @@ import streamlit as st
 
 
 # Load stopwords
-stop_words = pickle.load(open('../data/final_stop_words.pkl', 'rb'))
+stop_words = pickle.load(open('data/final_stop_words.pkl', 'rb'))
 
 
 # Create lemmatizer
@@ -21,7 +21,7 @@ lem = WordNetLemmatizer()
 # Load model
 @st.cache(allow_output_mutation=True, show_spinner=False)
 def load_model():
-    model = pickle.load(open('../models/StackingClassifier.pkl', 'rb'))
+    model = pickle.load(open('models/StackingClassifier.pkl', 'rb'))
     return model.best_estimator
 
 # Prepare review for model
